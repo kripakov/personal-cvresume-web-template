@@ -11,7 +11,61 @@ html
     link(rel='apple-touch-icon', sizes='72x72', href='img/favicon/apple-touch-icon-72x72.png')
     link(rel='apple-touch-icon', sizes='114x114', href='img/favicon/apple-touch-icon-114x114.png')
   body
-    .container
+    .container.navigator
+      .section.group
+          .header.col.col-12
+            .top-nav
+                include button_nav.pug
+    .container.description-author
+      .section.group
+          .col.col-6
+          .author.col.col-4
+              h2 Al Rayhan
+              .description
+                  span.top #Ui/ux Expert
+                  span #Graphic Designer
+              .hire-btn
+                span Hire Me!
+    .container.about
+      .section.group
+
+        .col.col-5
+          include about_me.pug
+        .col.col-4.author-img
+          img(src='../build/img/author.png')
+    .container.experience
+      .section.group
+        .col.col-6
+          h2 Work Experience
+    .container.work
+      .section.group
+        .col.col-5
+          .ceo
+            .stuff
+              h4 CEO & Founder 
+                span @DeviserWeb
+              .calendar Jan 2013 - Dec 2014
+              .stuff-text Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+          .ui
+            .stuff
+              h4 CEO & Founder 
+                span @DeviserWeb
+              .calendar Jan 2013 - Dec 2014
+              .stuff-text Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. consequat.  
+        .col.col-2
+        .col.col-5
+          .marketing
+            .stuff
+              h4 CEO & Founder 
+                span @DeviserWeb
+              .calendar Jan 2013 - Dec 2014
+              .stuff-text  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          .creative  
+            .stuff
+              h4 CEO & Founder 
+                span @DeviserWeb
+              .calendar Jan 2013 - Dec 2014
+              .stuff-text Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
     .hidden
     //if lt IE 9
       script(src='libs/html5shiv/es5-shim.min.js')

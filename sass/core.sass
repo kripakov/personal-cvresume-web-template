@@ -1,4 +1,118 @@
+/* =====================================================================*/
+@import "var"
 
+
+/* SLIDER RANGE =====================================================================*/
+
+
+// Reset
+.range-slider 
+  margin: 60px 0 0 0%
+
+.range-slider 
+  width: $range-width
+
+.range-slider__range 
+  -webkit-appearance: none
+  width: calc(100% - (#{$range-label-width + 13px}))
+  height: $range-track-height
+  border-radius: 5px
+  background: $range-track-color
+  outline: none
+  padding: 0
+  margin: 0
+
+  // Range Handle
+  &::-webkit-slider-thumb 
+    appearance: none
+    width: $range-handle-size
+    height: $range-handle-size
+    border-radius: 50%
+    background: $range-handle-color
+
+    transition: background .15s ease-in-out
+  
+
+  &:active::-webkit-slider-thumb 
+    background: $range-handle-color-hover
+  
+
+  &::-moz-range-thumb 
+    width: $range-handle-size
+    height: $range-handle-size
+    border: 0
+    border-radius: 50%
+    background: $range-handle-color
+    cursor: pointer
+    transition: background .15s ease-in-out
+
+    &:hover 
+      background: $range-handle-color-hover
+    
+  
+
+  &:active::-moz-range-thumb 
+    background: $range-handle-color-hover
+
+// Range Label
+.range-slider__value 
+  display: inline-block
+  position: relative
+  width: $range-label-width
+  color: $shade-0
+  line-height: 20px
+  text-align: center
+  border-radius: 3px
+  background: $range-label-color
+  padding: 5px 10px
+  margin-left: 8px
+
+  &:after 
+    position: absolute
+    top: 8px
+    left: -7px
+    width: 0
+    height: 0
+    border-top: 7px solid transparent
+    border-right: 7px solid $range-label-color
+    border-bottom: 7px solid transparent
+    content: ''
+  
+// Firefox Overrides
+::-moz-range-track 
+    background: $range-track-color
+    border: 0
+
+
+input::-moz-focus-inner,
+input::-moz-focus-outer 
+  border: 0;
+
+/*  SECTIONS  ============================================================================= */
+
+.section 
+	clear: both
+	padding: 0px
+	margin: 0px
+
+/*  SECTIONS  END ========================================================================= */
+
+/*  GROUPING  ============================================================================= */
+
+.group:before,
+.group:after 
+    content: ""
+    display: table
+
+.group:after 
+    clear: both
+
+.container 
+    zoom: 1 /* For IE 6/7 (trigger hasLayout) */
+
+/*  GROUPING END  ========================================================================== */
+
+/* SLIDER RANGE END =================================================================*/
 .container 
 	background: #e2e2e2
 	width: 100%
@@ -12,41 +126,56 @@
 	background: #fd4
 	text-align: center
 
-.container .cols.col-1
+
+/*  GRID COLUMN SETUP   ==================================================================== */
+.col 
+	display: block
+	float: left
+	padding: 15px
+.col:first-child 
+	margin-left: 0 /* all browsers except IE6 and lower */
+
+/*  GRID COLUMN SETUP  END ================================================================= */
+
+/*  COLONIUM DIV BLOCK ======================================================================== */
+
+.col-1
 	width: 8.3%
 
-.container .cols.col-2
+.col-2
 	width: 16.6%
 
-.container .cols.col-3
+.col-3
 	width: 25%
 
-.container .cols.col-4
-	width: 33%
+.col-4
+	width: 33.3%
 
-.container .cols.col-5
+.col-5
 	width: 41%
 
-.container .cols.col-6
+.col-6
 	width: 50%
 
-.container .cols.col-7
+.col-7
 	width: 58.3%
 
-.container .cols.col-8
+.col-8
 	width: 66.6%
 
-.container .cols.col-9
+.col-9
 	width: 75%
 
-.container .cols.col-10
+.col-10
 	width: 83%
 
-.container .cols.col-11
+.col-11
 	width: 91%
 
-.container .cols.col-12
+.col-12
 	width: 100%
+
+/*  COLONIUM DIV BLOCK END ====================================================================== */
 
 html 
 	-webkit-box-sizing: border-box
