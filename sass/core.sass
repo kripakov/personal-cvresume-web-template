@@ -7,8 +7,8 @@
 
 // Reset
 .range-slider 
-  margin: 60px 0 0 0%
-
+	margin-top: 22px
+	margin-bottom: 33px
 .range-slider 
   width: $range-width
 
@@ -56,37 +56,7 @@
 
 // Range Label
 .range-slider__value 
-  display: inline-block
-  position: relative
-  width: $range-label-width
-  color: $shade-0
-  line-height: 20px
-  text-align: center
-  border-radius: 3px
-  background: $range-label-color
-  padding: 5px 10px
-  margin-left: 8px
-
-  &:after 
-    position: absolute
-    top: 8px
-    left: -7px
-    width: 0
-    height: 0
-    border-top: 7px solid transparent
-    border-right: 7px solid $range-label-color
-    border-bottom: 7px solid transparent
-    content: ''
-  
-// Firefox Overrides
-::-moz-range-track 
-    background: $range-track-color
-    border: 0
-
-
-input::-moz-focus-inner,
-input::-moz-focus-outer 
-  border: 0;
+	margin-left: 15px
 
 /*  SECTIONS  ============================================================================= */
 
@@ -186,6 +156,7 @@ html
 	-webkit-box-sizing: inherit
 	-moz-box-sizing: inherit
 	box-sizing: inherit
+
 
 .clearfix:before,
 .clearfix:after

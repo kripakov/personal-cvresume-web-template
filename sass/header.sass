@@ -92,18 +92,19 @@ body
 	width: 325px
 	height: 3px
 	bottom: -17px
+	top: 8px
 	left: 31%
-.after-about-me
+.after-pro-me
 	position: relative
 	content: ''
 	background-color: $main-color
 	display: block
 	transform: translate(-50%, 0)
 	border-radius: 10em
-	width: 325px
+	width: 70px
 	height: 3px
 	bottom: -17px
-	left: 31%
+	left: 5%
 
 .ulmnu
 	list-style-type: none
@@ -130,12 +131,14 @@ body
 		 	font-size: 37px
 		 	font-family: "Raleway-Medium", sans-serif
 		 	font-weight: 500
+		 	margin-top: 15px
 				&::after
 					@extend .after;				
 		&::before
 			@extend .after
 		.description
 			margin-left: -36px
+			margin-top: 17px
 			span
 			 	color: #FFF
 			 	font-size: 18px
@@ -169,11 +172,15 @@ body
 				font-size: 24px
 				color: #3e3e3e
 				font-family: "Raleway-SemiBold", sans-serif
+				&::after
+					@extend .after-pro-me;
 			p 
 				font-size: 16px
 				color: #636363
 				font-family: "Raleway-Medium", sans-serif
 				text-align: justify
+				margin-top: 55px
+				line-height: 22px
 			ul
 				li 
 					display: block
@@ -191,7 +198,18 @@ body
 		display: table
 		padding: 80px 0 0 30px;
 
+.container.experience, .container.education
+	background-color: #FFF
+	h2
+		font-size: 24px
+		font-family: "Raleway-SemiBold", sans-serif
+		color: #3e3e3e
+		margin-left: 75px
+		&::after
+			@extend .after-pro-me;
+
 .container.work
+		padding: 80px
 		min-height: 800px
 		background-color: #FFF
 		background-image: url(../build/img/Experience.png)
@@ -217,3 +235,99 @@ body
 				font-size: 14px
 				font-family: "Raleway-Regular", sans-serif
 				line-height: 18px
+.container.work
+	.ceo 
+		margin-top: 300px
+	.ui 
+		margin-top: 235px
+	.marketing
+		margin-top: 55px
+		margin-bottom: 290px
+.container.education
+	margin: 0 80px 0 80px
+	.br-top
+		margin-top: 45px
+		h2
+			margin: 0
+.container.myskills,.container.skills
+	background-color: #1d1d24
+	padding: 0 80px 0 80px
+	color: #FFF
+
+.container.myskills
+	h2
+		font-family: "Raleway-SemiBold", sans-serif
+		font-size: 24px
+		margin-top: 60px
+.container.skills
+	span
+		font-family: "Raleway-Medium", sans-serif
+		font-size: 16px
+
+.container.adress
+	background-color: #FFF
+	padding: 80px
+	form
+		fieldset
+			legend
+				float: left
+				p
+					.nes
+						float: left
+						p 
+							input
+								border: 1px solid black
+								margin-top: 20px
+								padding: 5px
+								margin-right: 20px
+					.message
+						float: right
+	.hire-btn
+		margin-top: 45px
+		cursor: pointer
+		span
+		 	background-color: $main-color
+		 	padding: 15px 
+		 	display: block
+		 	width: 95px
+		 	color: #FFF
+		 	font-size: 16px
+		 	font-family: "Raleway-Light", sans-serif
+		 	border-radius: 5px
+		 	float: right
+.contact
+	img
+		float: left
+		margin-right: 42px
+		margin-bottom: 15px
+	.location,.email,.call
+		margin-bottom: 31px
+		h4
+			margin-bottom: 15px
+			font-family: "Raleway-Medium", sans-serif
+			font-size: 18px
+		span
+			font-family: "Raleway-Medium", sans-serif
+
+.container.border
+	padding: 80px
+	background-color: #FFF
+	.b 
+		border-top: 1px solid #e5e5e5
+.container.social-icons
+	background-color: #FFF
+	.social
+		text-align: center
+		ul
+			@extend .ulmnu
+			li
+				display: inline-block
+				&:not(:last-child)
+					border-right: 2px solid #a3a3a3
+					padding-right: 13px
+				&:nth-child(2)
+					margin-left: 13px
+	.copyright
+		margin-top: 15px
+		text-align: center
+		font-family: "Raleway-Medium", sans-serif
