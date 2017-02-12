@@ -206,13 +206,13 @@
                 <p>Leave a Message</p>
                 <div class="nes">
                   <p>
-                    <input type="text" name="name" id="name" value="Name*" spellcheck="false" size="20">
+                    <input type="text" name="name" id="name" placeholder="Name*" spellcheck="false" size="20">
                   </p>
                   <p>
-                    <input type="email" name="email" id="email" value="Email*" size="20">
+                    <input type="email" name="email" id="email" placeholder="Email*" size="20">
                   </p>
                   <p>
-                    <input type="subject" name="subject" id="subject" value="Subject*" size="20">
+                    <input type="subject" name="subject" id="subject" placeholder="Subject*" size="20">
                   </p>
                 </div>
                 <div class="message">
@@ -224,7 +224,7 @@
           </form>
         </div>
         <div class="contact col col-6">
-          <div class="location"><img src="icons/icons.png">
+          <div class="location"><img src="../icons/icons.png">
             <h4>Location</h4><span>324, Golden Tower, Amborkhana, Sylhet</span>
           </div>
           <div class="email"><img src="icons/plane.png">
@@ -255,13 +255,39 @@
         </div>
       </div>
     </div>
-    <div class="hidden"></div>
+    <div class="hidden">
+      <div class="menu-author">
+        <div class="top-menu-author">
+          <h4>Al Rayhan</h4><span class="desc">Ui/ux Expert</span>
+        </div>
+        <div class="ul-menu-author">
+          <ul>
+            <li><a>Home</a></li>
+            <li><a>About Me</a></li>
+            <li><a>Education</a></li>
+            <li><a>Work</a></li>
+            <li><a>Experience</a></li>
+            <li><a>Skills</a></li>
+            <li><a>Portfolio</a></li>
+            <li><a>Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
     <!--if lt IE 9
     script(src='libs/html5shiv/es5-shim.min.js')
     script(src='libs/html5shiv/html5shiv.min.js')
     script(src='libs/html5shiv/html5shiv-printshiv.min.js')
     script(src='libs/respond/respond.min.js')
     -->
+    <script>
+      var scr = {"scripts":[
+      {"src" : "libs/bower_components/jquery/dist/jquery.min.js", "async" : false},
+      {"src" : "libs/bower_components/bootstrap-validator/dist/validator.min.js", "async" : false},
+      {"src" : "js/app.js", "async" : false}
+      ]};!function(t,n,r){"use strict";var c=function(t){if("[object Array]"!==Object.prototype.toString.call(t))return!1;for(var r=0;r<t.length;r++){var c=n.createElement("script"),e=t[r];c.src=e.src,c.async=e.async,n.body.appendChild(c)}return!0};t.addEventListener?t.addEventListener("load",function(){c(r.scripts);},!1):t.attachEvent?t.attachEvent("onload",function(){c(r.scripts)}):t.onload=function(){c(r.scripts)}}(window,document,scr);
+      
+    </script>
     <script>
       function loadCSS(hf) {
       var ms=document.createElement("link");ms.rel="stylesheet";
@@ -273,7 +299,7 @@
       loadCSS("css/media.min.css");               //User Styles: Media
       loadCSS("css/core.min.css"); 	 		          //User Styles: Core
       loadCSS("css/fonts.min.css"); 				      //User Styles: Fonts
-      loadCSS("css/html5reset.min.css");               //User Styles: Fonts
+      loadCSS("css/html5reset.min.css");          //User Styles: Fonts
     </script>
   </body>
 </html>

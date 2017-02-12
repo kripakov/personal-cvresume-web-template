@@ -5,6 +5,8 @@
 body
 	font: 100%/1.5em Arial, Helvetica, sans-serif
 	color: #000
+	overflow-y: scroll
+	overflow-x: hidden
 
 /* BUTTON TOOGLE =====================================================================*/
 
@@ -270,7 +272,6 @@ body
 	form
 		fieldset
 			legend
-				p
 				.nes
 					float: left
 					p 
@@ -281,6 +282,7 @@ body
 							margin-right: 20px
 				.message
 					float: right
+					margin-top: 20px
 	.hire-btn
 		margin-top: 45px
 		cursor: pointer
@@ -326,9 +328,33 @@ body
 					padding-right: 13px
 				&:nth-child(2)
 					margin-left: 10px
-				&:nth-child(3)
-					margin-left: 10px
+				&:last-child
+					margin-left: 8px
 	.copyright
 		margin-top: 15px
 		text-align: center
 		font-family: "Raleway-Medium", sans-serif
+
+.hidden
+    .menu-author
+    	display: none
+    	position: absolute
+    	top: 0
+    	padding-left: 25px
+    	.top-menu-author
+    		font-size: 24px
+    		color: #FFF
+    		font-family: "Raleway-Medium", sans-serif
+    		margin-top: 150px
+    		span
+    			font-size: 18px
+    	.ul-menu-author
+    		font-family: "Raleway-Medium", sans-serif
+    		margin-top: 15px
+    		ul
+    			@extend .ulmnu; 
+    			li
+    				display: block
+    				height: 30px
+    				a
+    					display: block
