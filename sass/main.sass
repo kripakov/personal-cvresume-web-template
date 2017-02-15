@@ -1,3 +1,129 @@
+@import 'core'
+@import 'fonts'
+@import 'var'
+
 body
 	font: 100%/1.5em Arial, Helvetica, sans-serif
 	color: #000
+.container.navigator
+		background-image: url(../build/img/mouse.png)
+		background-repeat: no-repeat
+		background-position: center top
+		background-size: 100% auto
+		.header
+			background-color: none
+			a 
+				position: relative
+				display: block
+				height: 26px
+				width: 45px
+				margin-top: 48px
+				margin-left: 85px
+			.top-nav
+				text-align: center
+				h3
+					font-size: 28px
+					color: #FFF
+					font-family: "Raleway-SemiBold", sans-serif
+				span
+					font-size: 18px
+					color: #FFF
+					font-family: "Raleway-Medium", sans-serif
+				.hire-btn
+					margin-top: 54px
+					cursor: pointer
+					margin-bottom: 200px
+					span
+					 	background-color: $main-color
+					 	padding: 15px 45px 15px 45px
+					 	color: #FFF
+					 	font-size: 16px
+					 	font-family: "Raleway-Light", sans-serif
+					 	border-radius: 5px
+
+.container.portfolio-author
+		background-color: #FFF
+		h2
+			font-size: 24px
+			font-family: "Raleway-SemiBold", sans-serif
+			color: #3e3e3e
+			margin-top: 72px
+			&::after
+				left: 3%
+				@extend .after-pro-me
+.container.portfolio-author-nav
+		background-color: #FFF
+		.author-nav
+			ul
+				@extend .ulmnu
+				li 
+					display: inline-block
+					border-bottom: 2px solid #cccccc
+					margin-right: -5px
+					cursor: pointer
+					&:hover
+						border-bottom: 2px solid #f27982
+					a
+						margin-right: 125px
+						font-family: "Raleway-Medium", sans-serif
+						font-size: 16px
+.container.portfolio-author-section1,.container.portfolio-author-section2,.container.portfolio-author-section3,
+		background-color: #FFF
+		.author-section
+			display: inline-block
+			margin-right: 15px
+			img
+			.author-description
+				padding-left: 15px
+				color: #FFF
+				h2
+					margin: 0 0 10px 0
+					font-family: "Raleway-Medium", sans-serif
+					font-size: 22px
+				span 
+					font-family: "Raleway-Medium", sans-serif
+					font-size: 20px
+					margin-bottom: 18px
+				.link-project
+					margin-top: 15px 
+					font-family: "Raleway-Medium", sans-serif
+					display: block
+					border-bottom: 1px solid
+					width: 100px
+					padding-bottom: 6px
+					background-image: url(../icons/right.png)
+					background-position: 88px 8px
+					background-repeat: no-repeat
+					a
+						font-size: 14px
+						color: #FFF
+						text-decoration: none
+.container.portfolio-author-section1
+		padding-top: 65px
+		.author-section
+			background-color: #01b9c3
+			&:nth-child(2)
+				background-color: #1e2e3e
+			.author-description
+				padding: 10px
+.container.portfolio-author-section2
+		.author-section
+			background-color: #3f3d3e
+			&:nth-child(2)
+				background-color: #0093b5
+			.author-description
+				padding: 10px
+.container.portfolio-author-section3
+		.author-section
+			background-color: #353541
+			&:nth-child(2)
+				background-color: #6176ab
+			.author-description
+				padding: 10px
+.container.adress
+		padding: 0
+		p
+			font-family: "Raleway-Medium", sans-serif
+			font-size: 24px
+		.message
+			float: none

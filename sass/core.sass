@@ -264,7 +264,8 @@ div, p, input, button, a
 	font-size: 58px
 .f59px 
 	font-size: 59px
-
+.pdd80px
+	padding: 80px
 .white
 	color: #FFF
 .upper
@@ -277,3 +278,166 @@ div, p, input, button, a
 	float: left
 .righter
 	float: right
+
+.after-pro-me
+	position: relative
+	content: ''
+	background-color: $main-color
+	display: block
+	transform: translate(-50%, 0)
+	border-radius: 10em
+	width: 70px
+	height: 3px
+	bottom: -17px
+.ulmnu
+	list-style-type: none
+	margin: 0
+	padding: 0
+	li
+/* FONT-SIZE END =====================================================================*/
+
+/* BUTTON TOOGLE =====================================================================*/
+
+#toggle 
+	display: block
+	position: relative
+    width: 30px
+    height: 30px
+    float: right
+
+#toggle span:after, #toggle span:before 
+	content: ""
+	position: absolute
+	left: 0
+	top: -9px
+
+#toggle span:after
+	top: 9px
+
+#toggle span 
+	position: relative
+	top: 11px
+	display: block
+	z-index: 10
+
+#toggle span, #toggle span:after, #toggle span:before 
+	width: 100%
+	height: 5px
+	background-color: #888
+	transition: all 0.3s
+	backface-visibility: hidden
+	border-radius: 2px
+
+/* on activation */
+#toggle.on
+	margin-top: 48px
+    margin-left: 15px
+#toggle.on span 
+	background-color: transparent
+
+#toggle.on span:before 
+	transform: rotate(45deg) translate(5px, 5px)
+
+#toggle.on span:after 
+	transform: rotate(-45deg) translate(7px, -8px)
+
+#toggle.on + #menu 
+	opacity: 1
+	visibility: visible
+
+/* menu appearance*/
+#menu 
+	position: relative
+	color: #999
+	width: 200px
+	padding: 10px
+	margin: auto
+	font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif
+	text-align: center
+	border-radius: 4px
+	background: white
+	box-shadow: 0 1px 8px rgba(0,0,0,0.05)
+	  /* just for this demo */
+	opacity: 0
+	visibility: hidden
+	transition: opacity .4s
+
+#menu:after 
+	position: absolute
+	top: -15px
+	left: 95px
+	content: ""
+	display: block
+	border-left: 15px solid transparent
+	border-right: 15px solid transparent
+	border-bottom: 20px solid white
+
+/* BUTTON TOOGLE END =====================================================================*/
+
+.container.adress
+	background-color: #FFF
+	form
+		fieldset
+			border: none
+			legend
+				.nes
+					float: left
+					p 
+						input
+							border: 1px solid black
+							padding: 5px
+							margin-right: 20px
+				.message
+					float: right
+					margin-top: 20px
+	.hire-btn
+		margin-top: 45px
+		cursor: pointer
+		span
+		 	background-color: $main-color
+		 	padding: 15px 
+		 	display: block
+		 	width: 95px
+		 	color: #FFF
+		 	font-size: 16px
+		 	font-family: "Raleway-Light", sans-serif
+		 	border-radius: 5px
+		 	float: right
+.contact
+	img
+		float: left
+		margin-right: 42px
+		margin-bottom: 15px
+	.location,.email,.call
+		margin-bottom: 31px
+		h4
+			margin-bottom: 15px
+			font-family: "Raleway-Medium", sans-serif
+			font-size: 18px
+		span
+			font-family: "Raleway-Medium", sans-serif
+
+.container.border
+	padding: 80px
+	background-color: #FFF
+	.b 
+		border-top: 1px solid #e5e5e5
+.container.social-icons
+	background-color: #FFF
+	.social
+		text-align: center
+		ul
+			@extend .ulmnu
+			li
+				display: inline-block
+				&:not(:last-child)
+					border-right: 2px solid #a3a3a3
+					padding-right: 13px
+				&:nth-child(2)
+					margin-left: 10px
+				&:last-child
+					margin-left: 8px
+	.copyright
+		margin-top: 15px
+		text-align: center
+		font-family: "Raleway-Medium", sans-serif

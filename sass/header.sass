@@ -8,82 +8,6 @@ body
 	overflow-y: scroll
 	overflow-x: hidden
 
-/* BUTTON TOOGLE =====================================================================*/
-
-#toggle 
-	display: block
-	position: relative
-    width: 30px
-    height: 30px
-    float: right
-
-
-#toggle span:after, #toggle span:before 
-	content: ""
-	position: absolute
-	left: 0
-	top: -9px
-
-
-#toggle span:after
-	top: 9px
-
-
-#toggle span 
-	position: relative
-	display: block
-
-#toggle span, #toggle span:after, #toggle span:before 
-	width: 100%
-	height: 5px
-	background-color: #888
-	transition: all 0.3s
-	backface-visibility: hidden
-	border-radius: 2px
-
-/* on activation */
-#toggle.on span 
-	background-color: transparent
-
-#toggle.on span:before 
-	transform: rotate(45deg) translate(5px, 5px)
-
-#toggle.on span:after 
-	transform: rotate(-45deg) translate(7px, -8px)
-
-#toggle.on + #menu 
-	opacity: 1
-	visibility: visible
-
-/* menu appearance*/
-#menu 
-	position: relative
-	color: #999
-	width: 200px
-	padding: 10px
-	margin: auto
-	font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif
-	text-align: center
-	border-radius: 4px
-	background: white
-	box-shadow: 0 1px 8px rgba(0,0,0,0.05)
-	  /* just for this demo */
-	opacity: 0
-	visibility: hidden
-	transition: opacity .4s
-
-#menu:after 
-	position: absolute
-	top: -15px
-	left: 95px
-	content: ""
-	display: block
-	border-left: 15px solid transparent
-	border-right: 15px solid transparent
-	border-bottom: 20px solid white
-
-/* BUTTON TOOGLE END =====================================================================*/
-
 .after
 	position: relative
 	content: ''
@@ -120,7 +44,7 @@ body
 		a 
 			position: relative
 			display: block
-			height: 45px
+			height: 26px
 			width: 45px
 			margin-top: 48px
 			margin-left: 85px
@@ -246,7 +170,6 @@ body
 		margin-top: 55px
 		margin-bottom: 290px
 .container.education
-	margin: 0 80px 0 80px
 	.br-top
 		margin-top: 45px
 		h2
@@ -266,95 +189,42 @@ body
 		font-family: "Raleway-Medium", sans-serif
 		font-size: 16px
 
-.container.adress
-	background-color: #FFF
-	padding: 80px
-	form
-		fieldset
-			legend
-				.nes
-					float: left
-					p 
-						input
-							border: 1px solid black
-							margin-top: 20px
-							padding: 5px
-							margin-right: 20px
-				.message
-					float: right
-					margin-top: 20px
-	.hire-btn
-		margin-top: 45px
-		cursor: pointer
-		span
-		 	background-color: $main-color
-		 	padding: 15px 
-		 	display: block
-		 	width: 95px
-		 	color: #FFF
-		 	font-size: 16px
-		 	font-family: "Raleway-Light", sans-serif
-		 	border-radius: 5px
-		 	float: right
-.contact
-	img
-		float: left
-		margin-right: 42px
-		margin-bottom: 15px
-	.location,.email,.call
-		margin-bottom: 31px
-		h4
-			margin-bottom: 15px
-			font-family: "Raleway-Medium", sans-serif
-			font-size: 18px
-		span
-			font-family: "Raleway-Medium", sans-serif
-
-.container.border
-	padding: 80px
-	background-color: #FFF
-	.b 
-		border-top: 1px solid #e5e5e5
-.container.social-icons
-	background-color: #FFF
-	.social
-		text-align: center
-		ul
-			@extend .ulmnu
-			li
-				display: inline-block
-				&:not(:last-child)
-					border-right: 2px solid #a3a3a3
-					padding-right: 13px
-				&:nth-child(2)
-					margin-left: 10px
-				&:last-child
-					margin-left: 8px
-	.copyright
-		margin-top: 15px
-		text-align: center
-		font-family: "Raleway-Medium", sans-serif
-
 .hidden
-    .menu-author
-    	display: none
-    	position: absolute
-    	top: 0
-    	padding-left: 25px
-    	.top-menu-author
-    		font-size: 24px
-    		color: #FFF
-    		font-family: "Raleway-Medium", sans-serif
-    		margin-top: 150px
-    		span
-    			font-size: 18px
-    	.ul-menu-author
-    		font-family: "Raleway-Medium", sans-serif
-    		margin-top: 15px
-    		ul
-    			@extend .ulmnu; 
-    			li
-    				display: block
-    				height: 30px
-    				a
-    					display: block
+	.menu-author
+		display: none
+		position: absolute
+		top: 0
+		.top-menu-img
+			background-image: url(../build/min/author.jpg)
+			background-repeat: no-repeat
+			background-position: center
+			background-size: 100% auto
+			min-height: 300px
+		.top-menu-author
+			font-size: 24px
+			color: #FFF
+			font-family: "Raleway-Medium", sans-serif
+			span
+				font-size: 18px
+		.menu-desc
+			margin-top: -55px
+			.ath-r
+				color: #FFF
+				font-family: "Raleway-Medium", sans-serif
+				font-size: 28px
+				margin-left: 25px
+			span
+				padding-left: 25px
+				color: #FFF
+			.ul-menu-author
+				font-family: "Raleway-Medium", sans-serif
+				margin-top: 15px
+				ul
+					@extend .ulmnu; 
+					li
+						display: block
+						background-color: #353541
+						padding: 25px 135px 25px 25px
+						border-bottom: 1px solid #30303c
+						a
+							color: #FFF

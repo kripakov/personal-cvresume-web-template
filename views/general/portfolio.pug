@@ -11,8 +11,142 @@ html
     link(rel='apple-touch-icon', sizes='72x72', href='img/favicon/apple-touch-icon-72x72.png')
     link(rel='apple-touch-icon', sizes='114x114', href='img/favicon/apple-touch-icon-114x114.png')
   body
-    .container
-      
+    .container.navigator
+      .section.group
+        .header.col.col-12
+          .top-nav
+            include ../button_nav.pug
+            h3 Lets Make Something Great
+            span I’m an UI designer that prides ourself on being strategic brand partners and </br> awesome product providers
+            .hire-btn
+              span Hire Me!
+    .container.portfolio-author
+      .section.group
+        .col.col-3
+        .col.col-9
+          h2 Portfolio
+    .container.portfolio-author-nav
+      .section.group
+        .col.col-3
+        .author-nav.col.col-7
+          ul
+            li
+              a Branding
+            li
+              a Web Design
+            li
+              a Animation
+            li
+              a UI/ux
+        .col.col-2
+    .container.portfolio-author-section1
+      .section.group
+        .col.col-3
+        .col.col-7
+          .author-section
+            img(src='../build/img/people.png')
+            .author-description
+              h2 Marketing Partner
+              span Branding UI/UX Article
+              br
+              .link-project
+                a(href='') View Project
+          .author-section
+            img(src='../build/img/study.png')
+            .author-description
+              h2 Marketing Partner
+              span Branding UI/UX Article
+              br
+              .link-project
+                a(href='') View Project
+        .col.col-2
+    .container.portfolio-author-section2
+      .section.group
+        .col.col-3
+        .col.col-7
+          .author-section
+            img(src='../build/img/player.png')
+            .author-description
+              h2 Marketing Partner
+              span Branding UI/UX Article
+              br
+              .link-project
+                a(href='') View Project
+          .author-section
+            img(src='../build/img/cup.png')
+            .author-description
+              h2 Marketing Partner
+              span Branding UI/UX Article
+              br
+              .link-project
+                a(href='') View Project
+        .col.col-2
+    .container.portfolio-author-section3
+      .section.group
+        .col.col-3
+        .col.col-7
+          .author-section
+            img(src='../build/img/marketing.png')
+            .author-description
+              h2 Marketing Partner
+              span Branding UI/UX Article
+              br
+              .link-project
+                a(href='') View Project
+          .author-section
+            img(src='../build/img/developer.png')
+            .author-description
+              h2 Marketing Partner
+              span Branding UI/UX Article
+              br
+              .link-project
+                a(href='') View Project
+        .col.col-2
+    .container.adress
+      .section.group
+        .col.col-3
+        .col.col-2
+          form
+            fieldset
+              legend 
+                p Leave a Message
+                .nes
+                  p
+                    input(type='text', name='name', id='name', placeholder='Name*', spellcheck='false', size='20')
+                  p
+                    input(type='email', name='email', id='email', placeholder='Email*', size='20')
+                .message-auth
+                  textarea(cols='40', rows='10', placeholder="Message*")
+                  .hire-btn
+                    span Hire Me!
+        .col.col-1
+        .contact.col.col-3
+          .location
+            img(src='../icons/icons.png')
+            h4 Location
+            span 324, Golden Tower, Amborkhana, Sylhet
+          .email
+            img(src='icons/plane.png')
+            h4 Email
+            span junaed@deviserweb.com
+          .call
+            img(src='icons/phone.png')
+            h4 Toll Free Call
+            span 0800 234 6578 
+        .col.col-2
+    .container.social-icons
+      .section.group
+        .col.col-12
+          .social
+            ul
+              li
+                img(src='icons/twitter.png')
+              li
+                img(src='icons/skype.png')
+              li
+                img(src='icons/dribbble.png')
+          .copyright
+            span Copyright: Junaed Ahmed, All rights reserved
     .hidden
     //if lt IE 9
       script(src='libs/html5shiv/es5-shim.min.js')
@@ -25,7 +159,7 @@ html
       ms.href=hf;document.getElementsByTagName("head")[0].appendChild(ms);
       }
       //loadCSS("libs/animate/animate.css"); //Load Libs CSS: Animate CSS
-      loadCSS("css/header.min.css");              //Header Styles (compress & paste to header after release)
+      //loadCSS("css/header.min.css");              //Header Styles (compress & paste to header after release)
       loadCSS("css/main.min.css");                //User Styles: Main
       loadCSS("css/media.min.css");               //User Styles: Media
       loadCSS("css/core.min.css"); 	 		          //User Styles: Core
