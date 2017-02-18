@@ -1,17 +1,15 @@
 $(document).ready(function() {
-	$("#toggle").click(function() {
+	function handler1() {
 		$(this).toggleClass("on");
-		//$(".menu-author").slideToggle();
-		
-		$(".menu-author").slideToggle(function(){
-			$(".container.navigator .header a").animate({"margin-top":"85px", "margin-left":"25px"});
-		});
-		/*
-		$('#toggle').toggle(function () {
-		    $(".menu-author").css({"margin-top":"48px", "margin-left":"50px"});
-		}, function () {
-		    $(".menu-author").css({"margin-top":"5px", "margin-left":"25px"});
-		});*/
-		return false;
-	});
+		$(".menu-author").show("slow");
+	    $(this).animate({"margin-top":"38px", "margin-left":"25px", "width": "33px"});
+	    $(this).one("click", handler2);
+	}
+	function handler2() {
+	    $(this).animate({"margin-top":"48px", "margin-left":"85px", "width": "45px"});
+	    $(".menu-author").hide("slow");
+	    $(this).toggleClass("on");
+	    $(this).one("click", handler1);
+	}
+	$("#toggle").one("click", handler1);
 });

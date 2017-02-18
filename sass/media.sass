@@ -22,7 +22,6 @@
 				left: 34%
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
-
 	/**/
 	.container.description-author
 		.author
@@ -50,6 +49,37 @@
 				 	&:nth-child(1)
 				 		margin-left: -2px
 				 	font-size: 16px
+	.container.work
+		background-image: none
+		.ceo 
+			margin-top: 20px
+		.ui
+			margin-top: 20px
+		.marketing
+			margin-top: 20px	
+			margin-bottom: 20px
+
+	.container.adress
+		background-color: #FFF
+		form
+			fieldset
+				border: none
+				legend
+					.nes
+						float: none
+						p 
+							input
+								border: 1px solid black
+								padding: 5px
+								margin-right: 20px
+					.message
+						float: none
+						margin-top: 20px
+	.container.adress
+		.contact
+			margin-top: 250px
+	.col.col-6,.col.col-5, .col.col-4 
+		width: 100%		 	
 	/*Disable Animation on Mobile Devices*/
 	.animated
 		/*CSS transitions*/
@@ -70,8 +100,6 @@
 		-o-animation: none !important
 		-ms-animation: none !important
 		animation: none !important
-
-
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
 	/**/
