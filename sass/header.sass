@@ -52,20 +52,22 @@ body
 
 .container.description-author
 	background-color: $bgc
+	padding-bottom: 80px
+	margin-bottom: 80px
 	.author
+		text-align: center
 		h2
-		 	color: #FFF
-		 	font-size: 37px
-		 	font-family: "Raleway-Medium", sans-serif
-		 	font-weight: 500
-		 	margin-top: 15px
-				&::after
-					@extend .after;				
-		&::before
-			@extend .after
+			position: relative
+			color: #FFF
+			font-size: 37px
+			font-family: "Raleway-Medium", sans-serif
+			font-weight: 500
+			margin-top: 15px
+			padding: 10px
+			border-top: 2px solid #fb6470
+			border-bottom: 2px solid #fb6470
 		.description
-			margin-left: -36px
-			margin-top: 17px
+			margin: 17px 0 50px 0
 			span
 			 	color: #FFF
 			 	font-size: 18px
@@ -75,24 +77,22 @@ body
 			span
 			 	&:nth-child(1)
 			 		margin-right: 15px
-
 		.hire-btn
 			margin-top: 45px
 			cursor: pointer
-			span
-		 		background-color: $main-color
-		 		padding: 15px 35px 15px 35px
-		 		display: block
-		 		width: 155px
-		 		color: #FFF
-		 		font-size: 22px
-		 		font-family: "Raleway-Light", sans-serif
-		 		border-radius: 5px
-		 		margin-bottom: 188px
+			a
+				background-color: $main-color
+				padding: 15px 35px 15px 35px
+				width: 155px
+				color: #FFF
+				font-size: 22px
+				font-family: "Raleway-Light", sans-serif
+				border-radius: 5px
+				margin-bottom: 188px
+				text-decoration: none
 .container.about
 	background-color: $white
-	padding: 80px
-	padding-top: 178px
+	padding: 0 80px 0 80px
 	.col.col-5
 		.me 
 			h2
@@ -136,9 +136,8 @@ body
 		margin-left: 75px
 		&::after
 			@extend .after-pro-me;
-
 .container.work
-		padding: 80px
+		padding: 0 80px 0 80px
 		min-height: 800px
 		background-color: #FFF
 		background-image: url(../build/img/Experience.png)
@@ -172,11 +171,10 @@ body
 	.marketing
 		margin-top: 55px
 		margin-bottom: 290px
+
 .container.education
-	.br-top
-		margin-top: 45px
-		h2
-			margin: 0
+
+
 .container.myskills,.container.skills
 	background-color: #1d1d24
 	padding: 0 80px 0 80px
